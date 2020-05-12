@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background-color: #dab3ff;
+  text-transform: capitalize;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+  color: white;
+  margin: 40px;
+  font-size: 300%;
+  text-shadow: 2px 2px #ffff33;
+}
+
+div.characters{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 1px solid black;
+  background-color: #ccffcc;
+  height: 200px;
+  width: 90%;
+
+}
+
+#alex, #sam, #clover {
+  position: relative;
+  left:70%;
+  font-size: 150%;
+  border: black 1px solid;
+  width: 30%;
+  color: white;
+  margin: 0;
+  overflow: auto;
+}
+
+#sam {
+  background-color: #80ff80;
+}
+
+#clover {
+  background-color: #ff4d4d;
+}
+
+#alex {
+  background-color: #ffff4d;
+}
+
+.bio{
+  padding:5%;
+  height:140px;
+  text-transform: none;
+  text-align: left;
+  color: black;
+  font-size: 75%;
+  overflow: auto;
+}
+
+@media (min-width: 992px) {
+div.box1, div.box2, div.box3{
+  width: 33.33%;
+  float: left;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  div.box1, div.box2{
+    float:left;
+    width: 50%;
+  }
+
+  div.box3{
+    width: 100%;
+    float: left;
+  }
+
+.box3 > div.characters{
+  width: 95%;
+}
+}
+
+@media (max-width: 767px){
+  div.box1, div.box2, div.box3{
+    width: 100%;
+  };
+}
